@@ -563,8 +563,7 @@ input::placeholder {
 }
 
 /* modal */
-
-.modal-overlay {
+.backdrop {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
@@ -580,7 +579,7 @@ input::placeholder {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay.is-open {
+.backdrop.is-open {
   pointer-events: auto;
   opacity: 1;
 }
@@ -635,7 +634,7 @@ input::placeholder {
   fill: #ffffff;
 }
 
-.modal-title {
+.modal-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -726,6 +725,11 @@ margin-bottom: 8px;
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-textarea {
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
 .checkbox-hero {
   margin-bottom: 24px;
 }
@@ -771,7 +775,7 @@ margin-bottom: 8px;
   color: #8e8f99;
 }
 
-.modal-privacy-link {
+.text-privacy {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
